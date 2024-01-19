@@ -9,7 +9,17 @@ const __dirname = path.dirname(__filename)
 const staticFolder = path.join(__dirname, '../static')
 
 export default async ({ req, res, log }) => {
-  const config = JSON.parse(process.env.CONFIG ?? '[]')
+  const config = [
+    {
+      "path": "/app",
+      "targets": {
+        "android": "https://play.google.com/store/apps/details?id=com.example",
+        "ios": "https://apps.apple.com/app/example/id123456",
+        "default": "https://www.example.com/app"
+      }
+    }
+  ];
+  // const config = JSON.parse(process.env.CONFIG ?? '[]')
 
   if (config.length === 0) {
     throw new Error('CONFIG environment variable must be set')
