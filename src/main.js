@@ -13,9 +13,9 @@ export default async ({ req, res, log }) => {
     {
       "path": "/app",
       "targets": {
-        "android": "https://play.google.com/store/apps/details?id=com.example",
-        "ios": "https://apps.apple.com/app/example/id123456",
-        "default": "https://www.example.com/app"
+        "android": "https://play.google.com/store/apps/details?id=com.fivesocialmedia.fivesocialmedia&pli=1",
+        "ios": "https://apps.apple.com/in/app/fivesocialmedia/id1665131358",
+        "default": "https://www.offeryard.com/"
       }
     }
   ];
