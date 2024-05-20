@@ -17,6 +17,14 @@ export default async ({ req, res, log }) => {
         "ios": "https://apps.apple.com/in/app/fivesocialmedia/id1665131358",
         "default": "https://www.offeryard.com/"
       }
+    },
+    {
+      "path": "/app1",
+      "targets": {
+        "android": "https://play.google.com/store/apps/details?id=com.fivesocialmedia1.fivesocialmedia&pli=1",
+        "ios": "https://apps.apple.com/in/app/fivesocialmedia/id1665131358",
+        "default": "https://www.offeryard.com/"
+      }
     }
   ];
   // const config = JSON.parse(process.env.CONFIG ?? '[]')
