@@ -13,9 +13,18 @@ export default async ({ req, res, log }) => {
     {
       "path": "/app",
       "targets": {
-        "android": "https://play.google.com/store/apps/details?id=com.fivesocialmedia.fivesocialmedia&pli=1",
-        "ios": "https://apps.apple.com/in/app/fivesocialmedia/id1665131358",
-        "default": "https://www.offeryard.com/"
+        "android": {
+          "appName": "Five",
+          "appPackage": "com.fivesocialmedia.fivesocialmedia",
+          "appPath": "user?screen_name=appwrite",
+          "fallback": "https://play.google.com/store/apps/details?id=com.fivesocialmedia.fivesocialmedia&pli=1"
+        },
+        "ios": {
+          "appName": "twitter",
+          "appPath": "user?screen_name=appwrite",
+          "fallback": "https://apps.apple.com/in/app/fivesocialmedia/id1665131358"
+        },
+        "default": "https://twitter.com/appwrite"      
       }
     },
     {
