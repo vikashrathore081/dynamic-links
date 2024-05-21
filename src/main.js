@@ -16,7 +16,7 @@ export default async ({ req, res, log }) => {
         "android": {
           "appName": "Five",
           "appPackage": "com.fivesocialmedia.fivesocialmedia",
-          "appPath": "user?screen_name=appwrite",
+          "appPath": "user?screen_name=appwrite1",
           "fallback": "https://play.google.com/store/apps/details?id=com.fivesocialmedia.fivesocialmedia&pli=1"
         },
         "ios": {
